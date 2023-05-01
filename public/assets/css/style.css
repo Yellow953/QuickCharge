@@ -2412,3 +2412,6 @@ section {
 .logo-img {
     width: 55px !important;
 }
+.btn-rounded {
+    border-radius: 25px !important;
+}

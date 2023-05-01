@@ -14,7 +14,7 @@
 
 <body>
     <div class="registration-form">
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
             @csrf
             <div class="form-icon bg-white my-1">
                 <img src="{{asset('assets/images/logo.png')}}" alt="" class="img-fluid">
@@ -30,17 +30,13 @@
                 <input type="text" class="form-control item" id="phone" placeholder="Phone Number">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="dob" placeholder="Birth Date">
-            </div>
-            <div class="form-group">
                 <input type="password" class="form-control item" id="password" placeholder="********">
             </div>
             <div class="form-group">
-                <input type="password_confirmation" class="form-control item" id="password_confirmation"
-                    placeholder="********">
+                <input type="password" class="form-control item" id="password_confirmation" placeholder="********">
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-block create-account">Create Account</button>
+                <button type="submit" class="btn btn-block create-account">Create Account</button>
             </div>
 
             <br><br>

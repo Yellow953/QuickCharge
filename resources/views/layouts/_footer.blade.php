@@ -31,11 +31,11 @@
         <div class="col-lg-3 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            {{-- @foreach ($categories as $category)
-            <li><i class="bi bi-chevron-right"></i> <a href="/categories/{{ $category->id }}">
-                {{ $category.name }}
+            @foreach ($categories as $category)
+            <li><i class="bi bi-chevron-right"></i> <a href="/categories/{{ $category->id }}" class="nav-link">
+                {{ $category->name }}
               </a></li>
-            @endforeach --}}
+            @endforeach
           </ul>
         </div>
 

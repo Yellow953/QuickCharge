@@ -12,25 +12,25 @@
         <li><a class="nav-link scrollto" href="#hero">Home</a></li>
         <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            {{-- @foreach ($categories as $category)
+            @foreach ($categories as $category)
             @if ($category->products)
-            <li class="dropdown"><a href="#"><span>
+            <li class="dropdown"><a href="#" class="nav-link"><span>
                   {{ $category->name }}
                 </span> <i class="bi bi-chevron-right"></i></a>
               <ul>
                 @foreach ($category->products as $product)
-                <li><a href="/product/{{ $product->id }}">
+                <li><a href="/product/{{ $product->id }}" class="nav-link">
                     {{$product->name }}
                   </a></li>
                 @endforeach
               </ul>
             </li>
             @else
-            <li><a href="/category/{{$category->id}}">
+            <li><a href="/category/{{$category->id}}" class="nav-link">
                 {{ $category->name}}
               </a></li>
             @endif
-            @endforeach --}}
+            @endforeach
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>

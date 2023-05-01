@@ -36,7 +36,7 @@
                     name="password" required autocomplete="password" placeholder="********">
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-block create-account">Login</button>
+                <button type="submit" class="btn btn-block create-account">Login</button>
             </div>
 
             <br><br>
